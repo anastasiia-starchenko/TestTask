@@ -83,6 +83,7 @@
 .slick-prev:before
 {
     content: url('../img/arrow.svg');
+    transform: scaleX(-1);
     position: absolute;
     top: 7px;
     left: 20px;
@@ -105,7 +106,6 @@
 .slick-next:before
 {
     content: url('../img/arrow.svg');
-    transform: scaleX(-1);
     position: absolute;
     top: 7px;
     right: 20px;
@@ -113,12 +113,12 @@
 .slick-next:hover:before {
     background: url('../img/white-right-arrow.svg');
     background-repeat: no-repeat;
-    background-position: 5% 85%;
+    background-position: 95% 85%;
 }
 .slick-prev:hover:before {
     background: url('../img/white-right-arrow.svg');
     background-repeat: no-repeat;
-    background-position: 5% 85%;
+    background-position: 95% 85%;
 }
 [dir='rtl'] .slick-next:before
 {

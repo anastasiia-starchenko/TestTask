@@ -11,20 +11,23 @@
         <link rel="stylesheet" type="text/css" href="css/styles.css">
     </head>
     <body>
-        <header id="header">
+        <header id="header" class="header">
             <div class="header-paragraph-wrapper">
                 <p class="header-paragraph">Free shipping over $100</p>
             </div>
             <nav class="nav">
+                <button id="menu-button" class="menu-button">
+                    <div class="menu-button-text">Menu</div>
+                </button>
                 <a href="index.html"><img class="logo" src="img/logo.png" alt="logo"></a>
                 <ul class="nav-items">
                     <li class="nav-item"><a href="#" class="nav-item-link">Home</a></li>
                     <li class="nav-item"><a href="#" class="nav-item-link">Shop</a></li>
-                    <li class="nav-item"><a href="#" class="nav-item-link">About</a> 
+                    <li class="nav-item"><a href="#" class="nav-item-link">About</a></li> 
                     <li class="nav-item"><a href="#" class="nav-item-link">What is coffeeface</a></li>
                     <li class="nav-item"><a href="#" class="nav-item-link">Contact</a></li>
                 </ul>
-                <span class="icon-basket"></span>
+                <span class="icon-shopping-bag"></span>
             </nav>
         </header>
         <main>
@@ -64,15 +67,15 @@
             <div class="how-to-use-block">
                 <p class="how-to-use-paragraph">How to use the CoffeeFace</p>
                 <div class="how-to-use-stages">
-                    <div>
+                    <div class="how-to-use-stage-block">
                         <div class="icon-wash how-to-use-stage-wrapper"></div>
                         <span class="how-to-use-stage">Wash your face</span>
                     </div>
-                    <div>
+                    <div class="how-to-use-stage-block">
                         <div class="icon-apply how-to-use-stage-wrapper"></div>
                         <span class="how-to-use-stage">Apply on the skin</span>
                     </div>
-                    <div>
+                    <div class="how-to-use-stage-block">
                         <div class="icon-wait how-to-use-stage-wrapper"></div>
                         <span class="how-to-use-stage">Wait 5 minutes</span>
                     </div>
@@ -110,7 +113,7 @@
                 </div>
             </div>
             <div class="brands-block">
-                <img src="img/brands.png">
+                <img src="img/brands.png" class="brands-img" alt="brands-img">
             </div>
             <div class="subscribe-block">
                 <div class="subscribe-block-description">
@@ -126,15 +129,15 @@
             <div class="instagram-block">
                 <h2 class="instagram-heading">@coffee_face</h2>
                 <div id="insta-carousel">
-                    <div><img src="img/insta-1-img.png"></div>
-                    <div><img src="img/insta-2-img.png"></div>
-                    <div><img src="img/insta-3-img.png"></div>
-                    <div><img src="img/insta-1-img.png"></div>
-                    <div><img src="img/insta-2-img.png"></div>
-                    <div><img src="img/insta-3-img.png"></div>
-                    <div><img src="img/insta-1-img.png"></div>
-                    <div><img src="img/insta-2-img.png"></div>
-                    <div><img src="img/insta-3-img.png"></div>
+                    <div><img src="img/insta-1-img.png" class="insta-carousel-img"></div>
+                    <div><img src="img/insta-2-img.png" class="insta-carousel-img"></div>
+                    <div><img src="img/insta-3-img.png" class="insta-carousel-img"></div>
+                    <div><img src="img/insta-1-img.png" class="insta-carousel-img"></div>
+                    <div><img src="img/insta-2-img.png" class="insta-carousel-img"></div>
+                    <div><img src="img/insta-3-img.png" class="insta-carousel-img"></div>
+                    <div><img src="img/insta-1-img.png" class="insta-carousel-img"></div>
+                    <div><img src="img/insta-2-img.png" class="insta-carousel-img"></div>
+                    <div><img src="img/insta-3-img.png" class="insta-carousel-img"></div>
                 </div>
                 <span class="icon-instagram-grey"></span><p class="instagram-paragraph">JOIN US on instagram for new products, great giveaways and more!</p>
             </div>
@@ -185,8 +188,8 @@
             $(document).ready(function () {
               $('#carousel').slick({
                   centerMode: true,
-                  centerPadding: '60px',
                   slidesToShow: 3,
+                  variableWidth: true,
                   responsive: [
                     {
                       breakpoint: 768,
@@ -216,10 +219,27 @@
               $('#insta-carousel').slick({
                 infinite: true,
                 slidesToShow: 6,
-                slidesToScroll: 3
+                slidesToScroll: 3,
+                responsive: [
+                    {
+                      breakpoint: 1024,
+                      settings: {
+                        infinite: true,
+                        slidesToShow: 4,
+                        slidesToScroll: 2
+                      }
+                    }
+                  ]
                 });
                                 
             });
+        </script>
+        <script type="text/javascript">
+            let menu = document.querySelector("#menu-button");
+            let header = document.querySelector("#header");
+            menu.onclick = function() {
+                header.classList.toggle("menu-open");
+            }
         </script>
     </body>
 </html> 

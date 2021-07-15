@@ -35,161 +35,6 @@
   content: "\e908";
   margin-right: 5px;
 }
-.icon-DinersClub .path1:before {
-  content: "\e909";
-  color: rgb(244, 246, 247);
-}
-.icon-DinersClub .path2:before {
-  content: "\e90a";
-  margin-left: -1.5em;
-  color: rgb(229, 229, 229);
-  opacity: 0.0100;
-}
-.icon-DinersClub .path3:before {
-  content: "\e90b";
-  margin-left: -1.5em;
-  color: rgb(0, 0, 0);
-}
-.icon-DinersClub .path4:before {
-  content: "\e90c";
-  margin-left: -1.5em;
-  color: rgb(244, 246, 247);
-}
-.icon-Discover .path1:before {
-  content: "\e90d";
-  color: rgb(0, 0, 0);
-}
-.icon-Discover .path2:before {
-  content: "\e90e";
-  margin-left: -1.5em;
-  color: rgb(229, 229, 229);
-  opacity: 0.0100;
-}
-.icon-Discover .path3:before {
-  content: "\e90f";
-  margin-left: -1.5em;
-  color: rgb(33, 45, 52);
-}
-.icon-Discover .path4:before {
-  content: "\e910";
-  margin-left: -1.5em;
-  color: rgb(33, 45, 52);
-}
-.icon-Discover .path5:before {
-  content: "\e911";
-  margin-left: -1.5em;
-  color: rgb(33, 45, 52);
-}
-.icon-Discover .path6:before {
-  content: "\e912";
-  margin-left: -1.5em;
-  color: rgb(33, 45, 52);
-}
-.icon-Discover .path7:before {
-  content: "\e913";
-  margin-left: -1.5em;
-  color: rgb(33, 45, 52);
-}
-.icon-Discover .path8:before {
-  content: "\e914";
-  margin-left: -1.5em;
-  color: rgb(33, 45, 52);
-}
-.icon-Discover .path9:before {
-  content: "\e915";
-  margin-left: -1.5em;
-  color: rgb(33, 45, 52);
-}
-.icon-Discover .path10:before {
-  content: "\e916";
-  margin-left: -1.5em;
-  color: rgb(0, 0, 0);
-}
-.icon-Mastercard .path1:before {
-  content: "\e91c";
-  color: rgb(244, 246, 247);
-}
-.icon-Mastercard .path2:before {
-  content: "\e91d";
-  margin-left: -1.5em;
-  color: rgb(216, 35, 42);
-}
-.icon-Mastercard .path3:before {
-  content: "\e91e";
-  margin-left: -1.5em;
-  color: rgb(237, 159, 45);
-}
-.icon-Mastercard .path4:before {
-  content: "\e91f";
-  margin-left: -1.5em;
-  color: rgb(216, 35, 42);
-}
-.icon-Mastercard .path5:before {
-  content: "\e920";
-  margin-left: -1.5em;
-  color: rgb(237, 159, 45);
-}
-.icon-Mastercard .path6:before {
-  content: "\e921";
-  margin-left: -1.5em;
-  color: rgb(229, 229, 229);
-  opacity: 0.0100;
-}
-.icon-Amex .path1:before {
-  content: "\e922";
-  color: #71C8F2;
-  font-size: 20px;
-}
-.icon-Amex .path2:before {
-  content: "\e923";
-  margin-left: -1.5em;
-  color:#71C8F2;
-  opacity: 0.0100;
-  font-size: 20px;
-}
-.icon-Amex .path3:before {
-  content: "\e924";
-  margin-left: -2.7em;
-  color: #71C8F2;
-  opacity: 0.0100;
-  font-size: 20px;
-}
-.icon-Amex .path4:before {
-  content: "\e925";
-  margin-left: -1.5em;
-  color: #fff;
-  font-size: 20px;
-}
-.icon-Visa .path1:before {
-  content: "\e926";
-  color: rgb(244, 246, 247);
-  font-size: 20px;
-}
-.icon-Visa .path2:before {
-  content: "\e927";
-  margin-left: -1.9em;
-  color: rgb(64, 149, 219);
-  font-size: 20px;
-}
-.icon-Visa .path3:before {
-  content: "\e928";
-  margin-left: -1.9em;
-  color: rgb(244, 182, 98);
-  font-size: 20px;
-}
-.icon-Visa .path4:before {
-  content: "\e929";
-  margin-left: -2em;
-  color: rgb(0, 113, 206);
-  font-size: 20px;
-}
-.icon-Visa .path5:before {
-  content: "\e92a";
-  margin-left: -3em;
-  color: rgb(229, 229, 229);
-  font-size: 20px;
-  opacity: 0.0100;
-}
 .icon-instagram:before {
   content: "\e904";
   color: #fff;
@@ -226,6 +71,9 @@
 .icon-apply:before {
   content: "\e900";
   color: #8a5137;
+}
+.icon-shopping-bag:before {
+  content: "\e909";
 }
 
 
@@ -272,6 +120,9 @@
 .nav-item-link:hover {
 	color: #8A5137;
 	border-bottom:  1px solid #8A5137;
+}
+.menu-button {
+	display: none;
 }
 .main-product-wrapper {
 	height: 780px;
@@ -388,12 +239,15 @@ h1 {
 	line-height: 150%;
 	opacity: 0.5;
 	margin-right: 20px;
+	position: relative;
 }
 .old-price:before {
 	content: "";
-	background-color: #000;
-	width: 100%;
-	height: 100%;
+	position: absolute;
+	top: -37px;
+	left: -17px;
+	width: 90px;
+	height: 50px;
 	border-bottom: 1px solid #000;
 }
 .relevant-price {
@@ -469,10 +323,12 @@ h1 {
 	margin-bottom: 25px;
 }
 .carousel-paragraph {
+	margin-right: 66px;
+	margin-left: 66px;
 	font-weight: 300;
 	font-size: 18px;
 	line-height: 170%;
-
+	width: 650px !important;
 }
 .blog-block {
 	height: 700px;
@@ -556,9 +412,6 @@ h1 {
 	margin: 0 auto;
 	margin-bottom: 30px;
 	width: 735px;
-}
-.subscribe-block-img {
-
 }
 .email-input {
 	width: 315px;
@@ -681,4 +534,374 @@ h1 {
 }
 .card-img:hover {
 	border: 1px solid #8A5137;
+}
+.slick-list {
+	padding: 0 !important;
+	width: 100%;
+	height: 185px;
+}
+.slick-track {
+
+}
+@media screen and (max-width: 1024px) {
+	.main-product-wrapper {
+		height: 500px;
+	}
+	.main-product-img {
+		width: 550px;
+		height: 500px;
+	}
+	h1 {
+		width: auto;
+		font-size: 32px;
+	}
+	.sub-heading {
+		font-size: 18px;
+	}
+	.shop-button {
+		width: 290px;
+		height: 60px;
+	}
+	.about-product-block {
+		height: 400px;
+	}
+	.about-sub-heading {
+		font-size: 20px;
+	}
+	.about-block-img {
+		width: 408px;
+		height: 520px;
+		right: 40px;
+	}
+	.serum-block {
+		height: 650px;
+	}
+	.serum-img {
+		width: 600px;
+		height: 610px;
+	}
+	.serum-sub-heading {
+		font-size: 38px;
+	}
+	.serum-description {
+		font-size: 16px;
+	}
+	.old-price {
+		font-size: 18px;
+	}
+	.relevant-price {
+		font-size: 28px;
+	}
+	.sponge-block {
+		height: 520px;
+	}
+	.sponge-block-paragraph {
+		font-size: 50px;
+	}
+	.slick-prev {
+		left: 250px;
+	}
+	.slick-next {
+		right: 250px;
+	}
+	.aloe-img {
+		left: 170px;
+		height: 336px;
+		width: 664px;
+		top: -170px;
+	}
+	.blog-items {
+		bottom: -170px;
+	}
+	.blog-item-img {
+		width: 300px;
+		height: 199px;
+	}
+	.blog-paragraph {
+		width: 300px;
+		font-size: 16px;
+		line-height: 140%;
+	}
+	.brands-block {
+		height: 400px;
+	}
+	.brands-img {
+		width: 100%;
+	}
+	.subscribe-block {
+		height: 480px;
+	}
+	.subscribe-block-img {
+		width: 490px;
+		height: 480px;
+	}
+	.subscribe-block-description {
+		width: 534px;
+	}
+	.subscribe-heading {
+		font-size: 36px;
+	}
+	.subscribe-paragraph {
+		width: 490px;
+		font-size: 18px;
+	}
+	.email-input {
+		width: 265px;
+		height: 50px;
+		left: 70px;
+	}
+	.subscribe-button {
+		width: 170px;
+		height: 50px;
+		left: 335px;
+	}
+	.instagram-block {
+		height: 550px;
+		padding-top: 90px;
+	}
+	.insta-carousel-img {
+
+	}
+	.footer-div {
+		width: 900px;
+	}
+	.cards {
+		width: 170px;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: flex-end;
+	}
+	.cards .card-link:nth-child(3) {
+		margin-right: 0;
+	}
+	.footer-nav {
+		margin-right: 80px;
+	}
+}
+@media screen and (max-width: 768px) {
+	.logo {
+		width: 150px;
+	}
+	.nav-items {
+		width: 450px;
+	}
+	.main-product-wrapper {
+		height: 350px;
+	}
+	.main-product-img {
+		height: 350px;
+		width: 400px;
+	}
+	h1 {
+		font-size: 28px;
+	}
+	.sub-heading {
+		width: 300px;
+		font-size: 14px;
+		margin-bottom: 20px;
+	}
+	.shop-button {
+		width: 200px;
+		height: 50px;
+	}
+	.about-product-block {
+		height: 300px;
+	}
+	.about-sub-heading {
+		font-size: 16px;
+		width: 300px;
+	}
+	.about-block-img {
+		width: 290px;
+		height: 350px;
+	}
+	.serum-block {
+		height: 550px;
+	}
+	.serum-img {
+		width: 540px;
+		height: 550px;
+	}
+	.serum-sub-heading {
+		width: 350px;
+		font-size: 35px;
+	}
+	.serum-description {
+		width: 250px;
+		font-size: 14px;
+	}
+	.old-price {
+		font-size: 16px;
+	}
+	.old-price:before {
+		width: 70px;
+		left: -10px;
+	}
+	.relevant-price {
+		font-size: 24px;
+	}
+	.sponge-block {
+		height: 400px;
+	}
+	.sponge-block-paragraph {
+		font-size: 40px;
+	}
+	.how-to-use-block {
+		height: 400px;
+		background-size: 600px 200px;
+	}
+	.how-to-use-paragraph {
+		padding-top: 100px;
+		font-size: 30px;
+		margin-bottom: 50px;
+	}
+	.how-to-use-stage-wrapper {
+		width: 90px;
+		height: 90px;
+	}
+	.icon-wash, .icon-apply, .icon-wait {
+		line-height: 90px;
+		font-size: 40px;
+	}
+	.how-to-use-stage-block {
+		display: flex;
+		width: 140px;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	.carousel-paragraph {
+		width: 500px !important;
+		margin-right: 33px;
+		margin-left: 33px;
+	}
+	.slick-prev {
+		left: 180px;
+	}
+	.slick-next {
+		right: 180px;
+	}
+	.testimonials {
+		height: 700px;
+	}
+	.blog-block {
+		height: 500px;
+	}
+	.aloe-img {
+		width: 490px;
+		height: 250px;
+		left: 140px;
+		top: -110px;
+	}
+	.blog-item-img {
+		width: 230px;
+		height: 160px;
+	}
+	.blog-paragraph {
+		width: 230px;
+		font-size: 14px;
+	}
+	.brands-block {
+		height: 340px;
+	}
+	.subscribe-block {
+		height: 430px;
+	}
+	.subscribe-block-description {
+		width: 382px;
+	}
+	.subscribe-block-img {
+		height: 420px;
+	}
+	.subscribe-heading {
+		font-size: 34px;
+	}
+	.subscribe-paragraph {
+		width: 370px;
+		font-size: 15px;
+		line-height: 160%;
+	}
+	.email-input {
+		width: 200px;
+		height: 40px;
+		left: 30px;
+	}
+	.subscribe-button {
+		width: 100px;
+		height: 40px;
+		left: 230px;
+	}
+	.footer {
+		position: relative;
+	}
+	.footer-div {
+		width: 650px;
+	}
+	.footer-logo {
+		width: 170px;
+		height: 15px;
+	}
+	.footer-nav {
+		margin-right: 100px;
+		line-height: 230%;
+	}
+	.footer-nav-item-link {
+		font-size: 14px;
+	}
+	.socials {
+		margin-bottom: 40px;
+	}
+	.socials-link {
+		margin-right: 40px;
+	}
+	.footer-nav-contacts-block {
+		position: absolute;
+		top: 100px;
+	}
+}
+@media screen and (max-width: 414px) {
+	.header-paragraph-wrapper {
+		height: 31px;
+	}
+	.header-paragraph {
+		line-height: 31px;
+		font-size: 10px;
+	}
+	.menu-button {
+		display: block;
+		font-size: 14px;
+		line-height: 21px;
+		border: none;
+		background-color: transparent;
+	}
+	.nav-items {
+		display: none;
+	}
+	.nav {
+		height: 70px;
+	}
+	.header.menu-open {
+		background: #000;
+		height: 250px;
+		position: absolute;
+		top:0;
+		left: 0;
+		width: 100%;
+		z-index: 2;
+	}
+	.header.menu-open .menu-button {
+		color: #fff;
+	}
+	.header.menu-open .nav-items {
+		display: block;
+		position: absolute;
+		top: 100px;
+		left: -10px;
+		text-align: center;
+	}
+	.header.menu-open .nav-item-link {
+		color: #fff;
+	}
+	.main-product-wrapper {
+		background: linear-gradient(2.76deg, #FDFAF8 11.68%, rgba(255, 255, 255, 0) 80.51%);
+	}
 }
