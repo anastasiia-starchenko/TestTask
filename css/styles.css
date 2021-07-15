@@ -1,0 +1,684 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?3c8lj3');
+  src:  url('../fonts/icomoon.eot?3c8lj3#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?3c8lj3') format('truetype'),
+    url('../fonts/icomoon.woff?3c8lj3') format('woff'),
+    url('../fonts/icomoon.svg?3c8lj3#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-Star:before {
+  content: "\e907";
+  color: #cbcbcb;
+}
+.icon-Star-black:before {
+  content: "\e908";
+  margin-right: 5px;
+}
+.icon-DinersClub .path1:before {
+  content: "\e909";
+  color: rgb(244, 246, 247);
+}
+.icon-DinersClub .path2:before {
+  content: "\e90a";
+  margin-left: -1.5em;
+  color: rgb(229, 229, 229);
+  opacity: 0.0100;
+}
+.icon-DinersClub .path3:before {
+  content: "\e90b";
+  margin-left: -1.5em;
+  color: rgb(0, 0, 0);
+}
+.icon-DinersClub .path4:before {
+  content: "\e90c";
+  margin-left: -1.5em;
+  color: rgb(244, 246, 247);
+}
+.icon-Discover .path1:before {
+  content: "\e90d";
+  color: rgb(0, 0, 0);
+}
+.icon-Discover .path2:before {
+  content: "\e90e";
+  margin-left: -1.5em;
+  color: rgb(229, 229, 229);
+  opacity: 0.0100;
+}
+.icon-Discover .path3:before {
+  content: "\e90f";
+  margin-left: -1.5em;
+  color: rgb(33, 45, 52);
+}
+.icon-Discover .path4:before {
+  content: "\e910";
+  margin-left: -1.5em;
+  color: rgb(33, 45, 52);
+}
+.icon-Discover .path5:before {
+  content: "\e911";
+  margin-left: -1.5em;
+  color: rgb(33, 45, 52);
+}
+.icon-Discover .path6:before {
+  content: "\e912";
+  margin-left: -1.5em;
+  color: rgb(33, 45, 52);
+}
+.icon-Discover .path7:before {
+  content: "\e913";
+  margin-left: -1.5em;
+  color: rgb(33, 45, 52);
+}
+.icon-Discover .path8:before {
+  content: "\e914";
+  margin-left: -1.5em;
+  color: rgb(33, 45, 52);
+}
+.icon-Discover .path9:before {
+  content: "\e915";
+  margin-left: -1.5em;
+  color: rgb(33, 45, 52);
+}
+.icon-Discover .path10:before {
+  content: "\e916";
+  margin-left: -1.5em;
+  color: rgb(0, 0, 0);
+}
+.icon-Mastercard .path1:before {
+  content: "\e91c";
+  color: rgb(244, 246, 247);
+}
+.icon-Mastercard .path2:before {
+  content: "\e91d";
+  margin-left: -1.5em;
+  color: rgb(216, 35, 42);
+}
+.icon-Mastercard .path3:before {
+  content: "\e91e";
+  margin-left: -1.5em;
+  color: rgb(237, 159, 45);
+}
+.icon-Mastercard .path4:before {
+  content: "\e91f";
+  margin-left: -1.5em;
+  color: rgb(216, 35, 42);
+}
+.icon-Mastercard .path5:before {
+  content: "\e920";
+  margin-left: -1.5em;
+  color: rgb(237, 159, 45);
+}
+.icon-Mastercard .path6:before {
+  content: "\e921";
+  margin-left: -1.5em;
+  color: rgb(229, 229, 229);
+  opacity: 0.0100;
+}
+.icon-Amex .path1:before {
+  content: "\e922";
+  color: #71C8F2;
+  font-size: 20px;
+}
+.icon-Amex .path2:before {
+  content: "\e923";
+  margin-left: -1.5em;
+  color:#71C8F2;
+  opacity: 0.0100;
+  font-size: 20px;
+}
+.icon-Amex .path3:before {
+  content: "\e924";
+  margin-left: -2.7em;
+  color: #71C8F2;
+  opacity: 0.0100;
+  font-size: 20px;
+}
+.icon-Amex .path4:before {
+  content: "\e925";
+  margin-left: -1.5em;
+  color: #fff;
+  font-size: 20px;
+}
+.icon-Visa .path1:before {
+  content: "\e926";
+  color: rgb(244, 246, 247);
+  font-size: 20px;
+}
+.icon-Visa .path2:before {
+  content: "\e927";
+  margin-left: -1.9em;
+  color: rgb(64, 149, 219);
+  font-size: 20px;
+}
+.icon-Visa .path3:before {
+  content: "\e928";
+  margin-left: -1.9em;
+  color: rgb(244, 182, 98);
+  font-size: 20px;
+}
+.icon-Visa .path4:before {
+  content: "\e929";
+  margin-left: -2em;
+  color: rgb(0, 113, 206);
+  font-size: 20px;
+}
+.icon-Visa .path5:before {
+  content: "\e92a";
+  margin-left: -3em;
+  color: rgb(229, 229, 229);
+  font-size: 20px;
+  opacity: 0.0100;
+}
+.icon-instagram:before {
+  content: "\e904";
+  color: #fff;
+}
+.icon-twitter:before {
+  content: "\e905";
+  color: #fff;
+}
+.icon-Facebook:before {
+  content: "\e906";
+  color: #fff;
+}
+.icon-instagram:hover:before, .icon-Facebook:hover:before, .icon-twitter:hover:before {
+	color: #8a5137;
+}
+.icon-instagram-grey:before {
+  content: "\e903";
+  color: #909090;
+  margin-right: 10px;
+}
+.icon-wash, .icon-apply, .icon-wait {
+	font-size: 45px;
+	text-align: center;
+	line-height: 124px;
+}
+.icon-wait:before {
+  content: "\e901";
+  color: #8a5137;
+}
+.icon-wash:before {
+  content: "\e902";
+  color: #8a5137;
+}
+.icon-apply:before {
+  content: "\e900";
+  color: #8a5137;
+}
+
+
+
+*, .footer {
+	margin: 0;
+	padding: 0;
+	font-family: 'Poppins', sans-serif;
+	box-sizing: border-box;
+}
+
+.header-paragraph-wrapper {
+	height: 38px;
+	background-color: #000;
+}
+.header-paragraph {
+	color: #fff;
+	font-size: 12px;
+	line-height: 38px;
+	text-align: center;
+	font-weight: 300;
+}
+.nav {
+	height: 100px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+.nav-items {
+	list-style: none;
+	display: flex;
+	height: 24px;
+	width: 660px;
+	justify-content: space-between;
+}
+.nav-item-link {
+	font-size: 16px;
+	line-height: 24px;
+	color: #000;
+	text-decoration: none;
+	text-transform: capitalize;
+	padding-bottom: 5px;
+}
+.nav-item-link:hover {
+	color: #8A5137;
+	border-bottom:  1px solid #8A5137;
+}
+.main-product-wrapper {
+	height: 780px;
+	display: flex;
+	align-items: center;
+}
+.main-product-img {
+	height: 100%;
+}
+.main-headings-wrapper {
+	width: 50%;
+	text-align: center;
+}
+h1 {
+	font-weight: 300;
+	font-size: 36px;
+	line-height: 140%;
+	font-weight: 300;
+	width: 550px;
+	margin: 0 auto;
+	margin-bottom: 15px;
+}
+.sub-heading {
+	font-size: 20px;
+	line-height: 30px;
+	font-weight: 400;
+	width: 400px;
+	text-align: center;
+	margin: 0 auto;
+	margin-bottom: 35px;
+}
+.shop-button {
+	font-size: 16px;
+	line-height: 24px;
+	color: #fff;
+	font-weight: 400;
+	width: 316px;
+	height: 70px;
+	background-color: #000;
+	cursor: pointer;
+	border: none;
+}
+.about-product-block {
+	height: 435px;
+	background-color: #000;
+	display: flex;
+	align-items: center;
+}
+.about-heading-wrapper {
+	width: 50%;
+	text-align: center;
+}
+.about-sub-heading {
+	font-weight: 300;
+	font-size: 22px;
+	line-height: 170%;
+	color: #fff;
+	width: 400px;
+	margin: 0 auto;
+}
+.about-block-logo {
+	width: 264px;
+	height: 27px;
+	margin-bottom: 26px;
+}
+.about-block-img {
+	width: 538px;
+	height: 650px;
+	position: absolute;
+	right: 165px;
+}
+.serum-block {
+	height: 750px;
+	display: flex;
+	align-items: center;
+}
+.serum-img-wrapper {
+	width: 50%;
+	background: url("../img/serum-bg.png");
+}
+.serum-info-block {
+	width: 50%;
+	text-align: center;
+}
+.serum-sub-heading {
+	font-weight: 200;
+	font-size: 40px;
+	line-height: 130%;
+	width: 500px;
+	margin: 0 auto;
+	margin-bottom: 40px;
+}
+.reviews {
+	font-weight: 300;
+	font-size: 18px;
+	line-height: 125.5%;
+	margin-right: 10px;
+}
+.serum-description {
+	font-weight: 300;
+	font-size: 18px;
+	line-height: 170%;
+	margin: 0 auto;
+	margin-top: 25px;
+	margin-bottom: 20px;
+	width: 428px;
+}
+.prices-wrapper {
+	margin-bottom: 30px;
+}
+.old-price {
+	font-weight: 200;
+	font-size: 20px;
+	line-height: 150%;
+	opacity: 0.5;
+	margin-right: 20px;
+}
+.old-price:before {
+	content: "";
+	background-color: #000;
+	width: 100%;
+	height: 100%;
+	border-bottom: 1px solid #000;
+}
+.relevant-price {
+	font-weight: 200;
+	font-size: 30px;
+	line-height: 150%;
+}
+.sponge-block {
+	height: 740px;
+	background: url("../img/img3.png");
+	background-size: cover;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+/*.sponge-block-img {
+	width: 100%;
+	height: 100%;
+}*/
+.sponge-block-paragraph {
+	font-weight: 200;
+	font-size: 60px;
+	line-height: 120%;
+	color: #fff;
+	width: 300px;
+	text-align: center;
+}
+.how-to-use-block {
+	height: 550px;
+	background-color: rgb(252,209,194, 0.2);
+	background-image: url(../img/how-to-use.png);
+	background-repeat: no-repeat;
+	background-position: top center;
+}
+.how-to-use-paragraph {
+	font-weight: 200;
+	font-size: 40px;
+	line-height: 150%;
+	color: #000;
+	margin-bottom: 90px;
+	padding-top: 160px;
+	text-align: center;
+}
+.how-to-use-stages {
+	display: flex;
+	justify-content: space-around;
+}
+.how-to-use-stage-wrapper {
+	width: 124px;
+	height: 124px;
+	border: 1px solid #8A5137;
+	border-radius: 50%;
+	background-color: #fff;
+	margin-bottom: 20px;
+}
+.testimonials {
+	height: 900px;
+	padding-top: 100px;
+	text-align: center;
+}
+.testimonials-heading {
+	font-weight: 200;
+	font-size: 40px;
+	line-height: 150%;
+	text-align: center;
+	margin-bottom: 35px;
+}
+.testimonials-name {
+	font-weight: 500;
+	font-size: 22px;
+	line-height: 170%;
+	margin-top: 15px;
+	margin-bottom: 25px;
+}
+.carousel-paragraph {
+	font-weight: 300;
+	font-size: 18px;
+	line-height: 170%;
+
+}
+.blog-block {
+	height: 700px;
+	background-color: #000;
+	position: relative;
+	background-image: url(../img/blog-bg.png);
+	background-repeat: no-repeat;
+	background-position: top right;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.aloe-img {
+	position: absolute;
+	left: 350px;	
+	top: -200px;
+}
+.blog-heading {
+	font-weight: 200;
+	font-size: 40px;
+	line-height: 150%;
+	color: #fff;
+}
+.blog-items {
+	display: flex;
+	position: absolute;
+	bottom: -230px;
+}
+.blog-item {
+	margin-right: 20px;
+}
+.blog-items .blog-item:last-child {
+	margin-right: 0;
+}
+.blog-item-img {
+	margin-bottom: 22px;
+}
+.img-wrapper:hover:before {
+	content: '';
+	background: #8A5137;
+	opacity: 0.6;
+	width: 427px;
+  height: 299px;
+  position: absolute;
+  /*left: 0;
+  top: 0;*/
+  z-index: 2;
+  cursor: pointer;
+}
+.blog-paragraph {
+	font-size: 18px;
+	line-height: 160%;
+	width: 427px;
+}
+.brands-block {
+	height: 500px;
+	display: flex;
+	align-items: flex-end;
+	justify-content: center;
+}
+.subscribe-block {
+	height: 570px;
+	display: flex;
+	align-items: center;
+	background: linear-gradient(to right, #FCD1C2, #fefdfd, #fff);
+}
+.subscribe-block-description {
+	text-align: center;
+	width: 100%;
+}
+.subscribe-heading {
+	font-weight: 200;
+	font-size: 40px;
+	line-height: 150%;
+	margin-bottom: 30px;
+}
+.subscribe-paragraph {
+	font-weight: 300;
+	font-size: 22px;
+	line-height: 170%;
+	margin: 0 auto;
+	margin-bottom: 30px;
+	width: 735px;
+}
+.subscribe-block-img {
+
+}
+.email-input {
+	width: 315px;
+	height: 70px;
+	border: 1px solid #000000;
+	padding-left: 25px;
+	background-color: transparent;
+	position: absolute;
+	left: 300px;
+}
+.subscribe-button {
+	width: 203px;
+	height: 70px;
+	background-color: #000;
+	font-size: 16px;
+	line-height: 24px;
+	color: #fff;
+	cursor: pointer;
+	border: none;
+	position: absolute;
+	left: 615px;
+}
+.instagram-block {
+	height: 570px;
+	text-align: center;
+	padding-top: 115px;
+}
+.instagram-heading {
+	letter-spacing: -0.03em;
+	text-transform: uppercase;
+	font-weight: 200;
+	font-size: 40px;
+	line-height: 84%;
+	margin-bottom: 65px;
+}
+.instagram-paragraph {
+	font-weight: 300;
+	font-size: 14px;
+	line-height: 125.5%;
+	display: inline-block;
+}
+#insta-carousel {
+	margin-bottom: 75px;
+}
+.footer {
+	height: 310px;
+	background-color: #000;
+	background-image: url(../img/blog-bg.png);
+	background-repeat: no-repeat;
+	background-position: top -400px left -400px;
+	background-size: 900px 900px;
+	padding-top: 40px;
+}
+.footer-div {
+	margin: 0 auto;
+	width: 1320px;
+	height: 210px;
+	border-bottom: 0.5px solid rgb(255,255,255, 0.3);
+	display: flex;
+	justify-content: space-between;
+}
+.footer-logo {
+	width: 180px;
+	height: 19px;
+}
+.copyrights-div {
+	margin: 0 auto;
+	color: #fff;
+	width: 1320px;
+	height: 60px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-weight: 300;
+	font-size: 12px;
+	line-height: 18px;
+	opacity: 0.4;
+}
+.footer-nav-contacts-block {
+	display: flex;
+}
+.footer-nav {
+	line-height: 240%;
+	margin-right: 117px;
+}
+.footer-nav-contacts-block .footer-nav:last-child {
+	margin-right: 30px;
+}
+.footer-nav-items {
+	list-style: none;
+}
+.footer-nav-item-link {
+	color: #fff;
+	font-size: 16px;
+	text-decoration: none;
+}
+.footer-nav-item-link:hover {
+	color: #8A5137;
+}
+.socials-link {
+	text-decoration: none;
+	margin-right: 55px;
+}
+.socials-link:last-child {
+	margin-right: 0;
+}
+.socials {
+	margin-bottom: 130px;
+	display: flex;
+	justify-content: flex-end;
+}
+.card-link {
+	margin-right: 15px;
+}
+.cards .card-link:last-child {
+	margin-right: 0;
+}
+.card-img {
+	border: 1px solid transparent;
+}
+.card-img:hover {
+	border: 1px solid #8A5137;
+}
