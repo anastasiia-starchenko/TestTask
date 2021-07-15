@@ -96,6 +96,9 @@
 	text-align: center;
 	font-weight: 300;
 }
+.mobile-white-bg {
+	display: none;
+}
 .nav {
 	height: 100px;
 	display: flex;
@@ -127,13 +130,14 @@
 .main-product-wrapper {
 	height: 780px;
 	display: flex;
+	justify-content: flex-end;
 	align-items: center;
-}
-.main-product-img {
-	height: 100%;
+	background-image: url(../img/img1.png);
+	background-repeat: no-repeat;
+	background-position: left bottom;
+	background-size: contain;
 }
 .main-headings-wrapper {
-	width: 50%;
 	text-align: center;
 }
 h1 {
@@ -255,18 +259,20 @@ h1 {
 	font-size: 30px;
 	line-height: 150%;
 }
+.buy-it-word {
+	display: none;
+}
 .sponge-block {
 	height: 740px;
-	background: url("../img/img3.png");
+	background-image: url("../img/img3.png");
 	background-size: cover;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 }
-/*.sponge-block-img {
-	width: 100%;
-	height: 100%;
-}*/
+.mobile-sponge-bg {
+	display: none;
+}
 .sponge-block-paragraph {
 	font-weight: 200;
 	font-size: 60px;
@@ -547,10 +553,6 @@ h1 {
 	.main-product-wrapper {
 		height: 500px;
 	}
-	.main-product-img {
-		width: 550px;
-		height: 500px;
-	}
 	h1 {
 		width: auto;
 		font-size: 32px;
@@ -687,10 +689,6 @@ h1 {
 	}
 	.main-product-wrapper {
 		height: 350px;
-	}
-	.main-product-img {
-		height: 350px;
-		width: 400px;
 	}
 	h1 {
 		font-size: 28px;
@@ -878,6 +876,7 @@ h1 {
 	}
 	.nav {
 		height: 70px;
+		background-color: #FEF6F3;
 	}
 	.header.menu-open {
 		background: #000;
@@ -901,7 +900,150 @@ h1 {
 	.header.menu-open .nav-item-link {
 		color: #fff;
 	}
-	.main-product-wrapper {
+	.mobile-white-bg {
+		position: absolute;
+		display: block;
+		height: 600px;
+		width: 100%;
 		background: linear-gradient(2.76deg, #FDFAF8 11.68%, rgba(255, 255, 255, 0) 80.51%);
+		z-index: 2;
+	}
+	.main-product-wrapper {
+		height: 600px;
+		background-image: url(../img/mobile-bg.png);
+		background-size: cover;
+		background-position: left top;
+		background-color: #FEF6F3;
+		justify-content: center;
+		align-items: flex-end;
+	}
+	.main-headings-wrapper {
+		z-index: 2;
+		width: 335px;
+		margin-bottom: 80px;
+	}
+	.new-line {
+		display: block;
+	}
+	.sub-heading {
+		font-size: 16px;
+		line-height: 24px;
+		width: 340px;
+		margin-bottom: 30px;
+	}
+	.shop-button {
+		width: 335px;
+		height: 54px;
+	}
+	.about-product-block {
+		height: 580px;
+		position: relative;
+		align-items: flex-end;
+		justify-content: center;
+	}
+	.about-block-img {
+		width: 335px;
+		height: 405px;
+		top: -40px;
+		z-index: 2;
+	}
+	.about-heading-wrapper {
+		width: 335px;
+		margin-bottom: 60px;
+	}
+	.about-block-logo {
+		width: 160px;
+		height: 15px;
+	}
+	.serum-block {
+		height: 800px;
+		position: relative;
+	}
+	.serum-sub-heading {
+		font-size: 30px;
+		margin-bottom: 20px;
+	}
+	.serum-info-block {
+		position: absolute;
+		top: 85px;
+		left: 40px;
+		width: auto;
+	}
+	.reviews {
+		font-size: 14px;
+	}
+	.icon-Star-black, .icon-Star {
+		font-size: 14px;
+	}
+	.serum-description {
+		margin-top: 10px;
+		width: 335px;
+	}
+	.relevant-price {
+		font-size: 30px;
+	}
+	.buy-it-word {
+		display: inline;
+	}
+	.shop-word {
+		display: none;
+	}
+	.serum-img {
+		width: 355px;
+		height: 357px;
+	}
+	.serum-img-wrapper {
+		width: auto;
+		position: absolute;
+		bottom: 0;
+		background-position: left bottom;
+		background-size: 414px 380px;
+	}
+	.sponge-block {
+		height: 570px;
+		position: relative;
+		background-size: contain;
+		background-position: bottom center;
+		background-image: url('../img/mobile-sponge-bg.png');
+		background-repeat: no-repeat;
+		align-items: flex-start;
+	}
+	.mobile-sponge-bg {
+		display: block;
+		height: 580px;
+		width: 100%;
+		position: absolute;
+		background: linear-gradient(170.22deg, #FEF6F3 14.37%, rgba(254, 246, 243, 0) 104.42%);
+	}
+	.sponge-block-paragraph {
+		color: #000;
+		z-index: 2;
+		margin-top: 65px;
+	}
+	.how-to-use-block {
+		height: 700px;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	.how-to-use-paragraph {
+		width: 335px;
+		margin: 0 auto;
+		margin-bottom: 0px;
+		padding-top: 60px;
+	}
+	.how-to-use-stage-wrapper {
+		margin-bottom: 15px;
+	}
+	.how-to-use-stages {
+		flex-wrap: wrap;
+		width: 240px;
+		justify-content: center;
+	}
+	.how-to-use-stage-block {
+		margin-bottom: 30px;
+	}
+	.how-to-use-stages .how-to-use-stage-block:last-child {
+		margin-bottom: 0;
 	}
 }
