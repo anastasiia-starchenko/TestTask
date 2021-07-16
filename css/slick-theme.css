@@ -125,6 +125,10 @@
     content: url('../img/arrow.svg');
 }
 
+.instagram-block .insta-carousel .slick-next, .instagram-block .insta-carousel .slick-prev {
+    border: 1px solid transparent;
+}
+
 /* Dots */
 .slick-dotted.slick-slider
 {

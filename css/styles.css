@@ -72,9 +72,26 @@
   content: "\e900";
   color: #8a5137;
 }
+.icon-shopping-bag {
+	position: relative;
+}
 .icon-shopping-bag:before {
   content: "\e909";
 }
+.icon-shopping-bag:after {
+	content: '3';
+	text-align: center;
+	width: 15px;
+	font-size: 10px;
+	line-height: 15px;
+	background-color: #000;
+	color: #fff;
+	border-radius: 50%;
+	position: absolute;
+	top: -7px;
+	right: -8px;
+}
+
 
 
 
@@ -83,6 +100,9 @@
 	padding: 0;
 	font-family: 'Poppins', sans-serif;
 	box-sizing: border-box;
+}
+html, body {
+	overflow-x: hidden;
 }
 
 .header-paragraph-wrapper {
@@ -125,6 +145,9 @@
 	border-bottom:  1px solid #8A5137;
 }
 .menu-button {
+	display: none;
+}
+.gap-top-menu-open {
 	display: none;
 }
 .main-product-wrapper {
@@ -379,8 +402,6 @@ h1 {
 	width: 427px;
   height: 299px;
   position: absolute;
-  /*left: 0;
-  top: 0;*/
   z-index: 2;
   cursor: pointer;
 }
@@ -444,6 +465,24 @@ h1 {
 	height: 570px;
 	text-align: center;
 	padding-top: 115px;
+}
+.instagram-block #insta-carousel .slick-next, .instagram-block #insta-carousel .slick-prev {
+	border: 1px solid transparent;
+}
+.instagram-block #insta-carousel .slick-next:hover, .instagram-block #insta-carousel .slick-prev:hover {
+	background-color: transparent;
+}
+.instagram-block #insta-carousel .slick-prev {
+	left: -70px;
+	top: 90px;
+}
+.instagram-block #insta-carousel .slick-next {
+	right: -60px;
+	top: 90px;
+}
+#insta-carousel {
+	width: 1500px;
+	margin: 0 auto;
 }
 .instagram-heading {
 	letter-spacing: -0.03em;
@@ -554,11 +593,16 @@ h1 {
 		height: 500px;
 	}
 	h1 {
-		width: auto;
+		width: 450px;
 		font-size: 32px;
 	}
 	.sub-heading {
 		font-size: 18px;
+		width: 380px;
+	}
+	.main-headings-wrapper {
+		width: 450px;
+		margin-right: 40px;
 	}
 	.shop-button {
 		width: 290px;
@@ -661,8 +705,8 @@ h1 {
 		height: 550px;
 		padding-top: 90px;
 	}
-	.insta-carousel-img {
-
+	#insta-carousel {
+		width: 900px;
 	}
 	.footer-div {
 		width: 900px;
@@ -690,8 +734,13 @@ h1 {
 	.main-product-wrapper {
 		height: 350px;
 	}
+	.main-headings-wrapper {
+		margin-right: 0px;
+		width: 400px
+	}
 	h1 {
 		font-size: 28px;
+		width: 400px;
 	}
 	.sub-heading {
 		width: 300px;
@@ -801,6 +850,13 @@ h1 {
 	.brands-block {
 		height: 340px;
 	}
+	#insta-carousel {
+		width: 600px;
+	}
+	.insta-carousel-img {
+		width: 180px;
+		height: 180px;
+	}
 	.subscribe-block {
 		height: 430px;
 	}
@@ -860,6 +916,14 @@ h1 {
 	.header-paragraph-wrapper {
 		height: 31px;
 	}
+	.header.menu-open .gap-top-menu-open {
+		display: block;
+		height: 70px;
+		width: 100%;
+	}
+	h1 {
+		width: 335px;
+	}
 	.header-paragraph {
 		line-height: 31px;
 		font-size: 10px;
@@ -878,7 +942,7 @@ h1 {
 		height: 70px;
 		background-color: #FEF6F3;
 	}
-	.header.menu-open {
+	.header.menu-open .nav{
 		background: #000;
 		height: 250px;
 		position: absolute;
@@ -899,6 +963,20 @@ h1 {
 	}
 	.header.menu-open .nav-item-link {
 		color: #fff;
+	}
+	.header.menu-open .logo {
+		position: absolute;
+		top: 40px;
+		left: 140px;
+
+	}
+	.header.menu-open .icon-shopping-bag {
+		border-radius: 50%;
+		color: #fff;
+	}
+	.header.menu-open .icon-shopping-bag:after {
+		background-color: #fff;
+		color: #000;
 	}
 	.mobile-white-bg {
 		position: absolute;
@@ -1045,5 +1123,160 @@ h1 {
 	}
 	.how-to-use-stages .how-to-use-stage-block:last-child {
 		margin-bottom: 0;
+	}
+	.carousel-paragraph {
+		width: 335px !important;
+		font-size: 14px;
+	}
+	#insta-carousel {
+		width: 400px;
+	}
+	.slick-next {
+		right: 25px;
+	}
+	.slick-prev {
+		left: 25px;
+	}
+	.slick-next, .slick-prev {
+		width: 31px;
+		height: 31px;
+	}
+	.slick-prev:before {
+		top: 2px;
+		left: 13px;
+	}
+	.slick-next:before {
+		top: 2px;
+		right: 13px;
+	}
+	.anna-photo {
+		width: 61px;
+		height: 61px;
+	}
+	.testimonials-name {
+		font-size: 16px;
+	}
+	.blog-block {
+		height: 370px;
+	}
+	.aloe-img {
+		width: 335px;
+		height: 160px;
+		left: 35px;
+		top: -80px;
+	}
+	.blog-heading {
+		font-size: 30px;
+	}
+	.subscribe-block {
+		height: 900px;
+		flex-wrap: wrap;
+		justify-content: center;
+		position: relative;
+		align-items: flex-start;
+		padding-top: 60px;
+		overflow: hidden;
+	}
+	.subscribe-block-description {
+		width: 335px;
+	}
+	.subscribe-heading {
+		font-size: 30px;
+	}
+	.subscribe-paragraph {
+		font-size: 16px;
+		line-height: 170%;
+		width: 335px;
+	}
+	.email-input, .subscribe-button {
+		width: 335px;
+		height: 54px;
+		left: 0px;
+	}
+	.subscribe-button {
+		top: 65px;
+	}
+	.subscribe-form {
+		position: relative;
+	}
+	.subscribe-block-img {
+		mix-blend-mode: multiply;
+		align-self: flex-end;
+		position: absolute;
+		left: -40px;
+		bottom: -40px;
+		width: 450px;
+		height: 430px;
+	}
+	.instagram-heading {
+		font-size: 30px;
+		line-height: 150%;
+		text-transform: lowercase;
+	}
+	.instagram-paragraph {
+		width: 258px;
+		font-size: 12px;
+	}
+	.icon-instagram-grey {
+		display: block;
+		margin-bottom: 8px;
+	}
+	.insta-carousel-img {
+		width: 105px;
+		height: 105px;
+	}
+	#insta-carousel {
+		margin-bottom: 25px;
+		height: 110px;
+	}
+	.instagram-block {
+		height: 400px;
+		padding-top: 60px;
+	}
+	.footer-div {
+		width: 335px;
+		height: 350px;
+	}
+	.footer-logo {
+		width: 122px;
+		height: 12px;
+	}
+	.footer {
+		height: 450px;
+	}
+	.footer-nav {
+		width: 200px;
+	}
+	.footer-nav-contacts-block {
+		flex-wrap: wrap;
+	}
+	.cards {
+		width: 335px;
+		justify-content: space-between;
+	}
+	.socials {
+		position: absolute;
+		top: -60px;
+		right: 20px;
+	}
+	.socials-icons {
+		margin-top: 30px;
+	}
+	.copyrights-div {
+		width: 335px
+	}
+}
+@media screen and (max-width: 414px) {
+	.about-block-img {
+		right: 20px;
+	}
+	.serum-info-block {
+		left: 15px;
+	}
+	.aloe-img {
+		left: 20px;
+	}
+	.subscribe-block-img {
+		left: -60px;
 	}
 }
