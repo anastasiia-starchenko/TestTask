@@ -99,7 +99,7 @@
             <div class="blog-block">
                 <img src="img/aloe.png" alt="aloe" class="aloe-img">
                 <h2 class="blog-heading">Blog</h2>
-                <div class="blog-items">
+                <div id="blog-items" class="blog-items">
                     <div class="blog-item">
                         <a href="#" class="img-wrapper"><img src="img/blog-1-img.png" alt="blog-img" class="blog-item-img"></a>
                         <p class="blog-paragraph">Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print</p>
@@ -209,6 +209,26 @@
                         centerMode: true,
                         centerPadding: '40px',
                         slidesToShow: 1
+                      }
+                    }
+                  ]
+                });
+                                
+            });
+        </script>
+        <script type="text/javascript">
+            $(document).ready(function () {
+              $('.blog-items').slick({
+                infinite: true,
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                responsive: [
+                    {
+                      breakpoint: 415,
+                      settings: {
+                        infinite: true,
+                        slidesToShow: 1,
+                        slidesToScroll: 1
                       }
                     }
                   ]

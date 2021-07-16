@@ -385,6 +385,10 @@ h1 {
 	display: flex;
 	position: absolute;
 	bottom: -230px;
+	height: 400px;
+}
+.blog-items .slick-list {
+	overflow: initial;
 }
 .blog-item {
 	margin-right: 20px;
@@ -657,7 +661,7 @@ h1 {
 		top: -170px;
 	}
 	.blog-items {
-		bottom: -170px;
+		bottom: -280px;
 	}
 	.blog-item-img {
 		width: 300px;
@@ -832,6 +836,9 @@ h1 {
 	}
 	.blog-block {
 		height: 500px;
+	}
+	.blog-items {
+		width: 750px;
 	}
 	.aloe-img {
 		width: 490px;
@@ -1159,6 +1166,15 @@ h1 {
 	.blog-block {
 		height: 370px;
 	}
+	.blog-items {
+		width: 300px;
+	}
+	.blog-items .slick-prev, .blog-items .slick-next {
+		display: none !important;
+	}
+	.brands-block {
+		height: 200px;
+	}
 	.aloe-img {
 		width: 335px;
 		height: 160px;
@@ -1266,7 +1282,7 @@ h1 {
 		width: 335px
 	}
 }
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 375px) {
 	.about-block-img {
 		right: 20px;
 	}
@@ -1274,7 +1290,7 @@ h1 {
 		left: 15px;
 	}
 	.aloe-img {
-		left: 20px;
+		left: 40px;
 	}
 	.subscribe-block-img {
 		left: -60px;
